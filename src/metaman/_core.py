@@ -4,6 +4,8 @@ You should only add code to this module when you are unable to find ANY other
 module to add it to.
 """
 
+from __future__ import annotations
+
 import inspect
 from os.path import abspath, isfile, realpath
 from pathlib import Path

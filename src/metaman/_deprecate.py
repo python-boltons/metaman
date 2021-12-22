@@ -1,5 +1,7 @@
 """Helper utilities for deprecating other code."""
 
+from __future__ import annotations
+
 from functools import wraps
 from typing import Any, Callable
 from warnings import warn
