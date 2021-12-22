@@ -1,6 +1,6 @@
 # metaman
 
-**Makes use of Python's dynamic nature to inspect a program's internals.**
+**metadata manager (METAMAN)... Makes use of Python's dynamic nature to inspect a program's internals.**
 
 _project status badges:_
 

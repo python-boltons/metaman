@@ -12,7 +12,7 @@
       "package_name": "metaman",
       "pypi_package_name": "bolton-metaman",
       "read_the_docs_domain": "bolton-metaman",
-      "package_description": "Makes use of Python's dynamic nature to inspect a program's internals.",
+      "package_description": "metadata manager (METAMAN)... Makes use of Python's dynamic nature to inspect a program's internals.",
       "package_type": "library",
       "_template": "https://github.com/python-boltons/cc-python",
       "package_path": "metaman",

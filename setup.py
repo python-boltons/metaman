@@ -17,7 +17,10 @@ from setuptools import find_namespace_packages, setup
 ###############################################################################
 # Configuration variables that are likely to need changing at some point.
 ###############################################################################
-DESCRIPTION = "Makes use of Python's dynamic nature to inspect a program's internals."
+DESCRIPTION = (
+    "metadata manager (METAMAN)... Makes use of Python's dynamic nature to"
+    " inspect a program's internals."
+)
 SUPPORTED_PYTHON_VERSIONS = [
     (3, 8),
     (3, 9),

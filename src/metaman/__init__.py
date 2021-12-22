@@ -1,4 +1,8 @@
-"""Makes use of Python's dynamic nature to inspect a program's internals."""
+"""metaman package
+
+metadata manager (METAMAN)... Makes use of Python's dynamic nature to inspect a
+program's internals.
+"""
 
 import logging as _logging
 

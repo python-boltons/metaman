@@ -3,7 +3,7 @@
 Welcome to metaman's documentation!
 ===================================
 
-Makes use of Python's dynamic nature to inspect a program's internals.
+metadata manager (METAMAN)... Makes use of Python's dynamic nature to inspect a program's internals.
 
 .. toctree::
    :maxdepth: -1
