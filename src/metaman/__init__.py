@@ -6,10 +6,17 @@ program's internals.
 
 import logging as _logging
 
-from ._core import dummy
+from ._core import Inspector, cname, scriptname
+from ._deprecate import MetamanDeprecationWarning, deprecated
 
 
-__all__ = ["dummy"]
+__all__ = [
+    "Inspector",
+    "MetamanDeprecationWarning",
+    "deprecated",
+    "cname",
+    "scriptname",
+]
 
 __author__ = "Bryan M Bugyi"
 __email__ = "bryanbugyi34@gmail.com"

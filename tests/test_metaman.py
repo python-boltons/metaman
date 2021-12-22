@@ -1,10 +1,22 @@
 """Tests for the metaman package."""
 
-from __future__ import annotations
+from pathlib import Path
+import sys
 
-from metaman import dummy
+from _pytest.monkeypatch import MonkeyPatch
+from pytest import mark
+
+from metaman import Inspector
 
 
-def test_dummy() -> None:
-    """Test the dummy() function."""
-    assert dummy(1, 2) == 3
+params = mark.parametrize
+
+
+def test_inspector__SYS_PATH_BUG(monkeypatch: MonkeyPatch) -> None:
+    """Regression test for bug in Inspector.
+
+    This bug occurs when sys.path contains Path objects instead of strings.
+    """
+    monkeypatch.setattr("sys.path", [Path(p) for p in sys.path])
+    inspector = Inspector()
+    assert hasattr(inspector, "module_name")
