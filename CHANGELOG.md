@@ -9,12 +9,19 @@ The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning]: https://semver.org/
 
 
-## [Unreleased](https://github.com/python-boltons/metaman/compare/0.1.0...HEAD)
+## [Unreleased](https://github.com/python-boltons/metaman/compare/0.1.1...HEAD)
 
 No notable changes have been made.
 
 
-## [0.1.0](https://github.com/python-boltons/metaman/releases/tag/0.1.0
+## [0.1.1](https://github.com/python-boltons/metaman/compare/0.1.0...0.1.1) - 2021-12-22
+
+### Changed
+
+* `Inspector.lines` is now a list instead of a string.
+
+
+## [0.1.0](https://github.com/python-boltons/metaman/releases/tag/0.1.0) - 2021-12-22
 
 ### Miscellaneous
 

@@ -29,7 +29,7 @@ class Inspector:
         self.file_name = frame[1]
         self.line_number = frame[2]
         self.function_name = frame[3]
-        self.lines = "".join(frame[4] or [])
+        self.lines = frame[4] or []
 
 
 def _path_to_module(path: str) -> str:
