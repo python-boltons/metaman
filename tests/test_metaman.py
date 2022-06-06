@@ -40,3 +40,7 @@ def test_register_function_factory() -> None:
         return 2
 
     assert sum(func() for func in registry) == 3
+
+    @register  # type: ignore[arg-type]
+    def baz() -> str:
+        return "baz"
