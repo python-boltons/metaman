@@ -10,6 +10,10 @@ import inspect
 from os.path import abspath, isfile, realpath
 from pathlib import Path
 import sys
+from typing import Callable, MutableSequence, TypeVar
+
+
+T = TypeVar("T")
 
 
 def cname(obj: object) -> str:
@@ -61,3 +65,18 @@ def scriptname(*, up: int = 0) -> str:
     """
     frame = inspect.stack()[up + 1]
     return Path(frame.filename).stem
+
+
+def register_function_factory(
+    mut_registry: MutableSequence[T],
+) -> Callable[[T], T]:
+    """Factory for decorators used to register a function.
+
+    We append all decorated functions to the `mut_registry` list.
+    """
+
+    def register_function(spell: T) -> T:
+        mut_registry.append(spell)
+        return spell
+
+    return register_function

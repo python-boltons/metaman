@@ -6,7 +6,7 @@ program's internals.
 
 import logging as _logging
 
-from ._core import Inspector, cname, scriptname
+from ._core import Inspector, cname, register_function_factory, scriptname
 from ._deprecate import MetamanDeprecationWarning, deprecated
 
 
@@ -15,6 +15,7 @@ __all__ = [
     "MetamanDeprecationWarning",
     "deprecated",
     "cname",
+    "register_function_factory",
     "scriptname",
 ]
 
